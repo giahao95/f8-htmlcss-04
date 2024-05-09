@@ -419,3 +419,125 @@ a {
   top: -40px;
   right: -35px;
 }
+
+/* ===== Features ===== */
+.features {
+  margin-top: 77px;
+}
+
+.features > .box--row {
+  justify-content: space-between;
+}
+
+.features__images {
+  position: relative;
+  margin: 16px 0 50px;
+  max-width: 458px;
+  border-radius: 18px;
+  border: 2px solid #fff;
+  background: linear-gradient(180deg, #c6e2fa 0%, #94c2ea 100%);
+  box-shadow: 0px 17px 77px -8px rgba(190, 165, 139, 0.17);
+}
+
+.features__img {
+  object-fit: cover;
+}
+
+.features__vector-1 {
+  position: absolute;
+  top: 12px;
+  right: 48px;
+}
+
+.features__vector-2 {
+  position: absolute;
+  top: -16px;
+  right: 5px;
+}
+
+.features__vector-3 {
+  position: absolute;
+  top: 30px;
+  right: -26px;
+}
+
+.features__vector-4 {
+  position: absolute;
+  bottom: 210px;
+  right: -37px;
+}
+
+.features__vector-5 {
+  position: absolute;
+  bottom: 150px;
+  right: 25px;
+}
+.features__vector-6 {
+  position: absolute;
+  right: -45px;
+  bottom: -50px;
+}
+
+.features__content {
+  width: 46%;
+}
+
+.features__heading {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.19;
+}
+
+.features__desc {
+  margin-top: 24px;
+  line-height: 1.87;
+}
+
+.features-info {
+  margin-top: 50px;
+}
+
+.features-info__list {
+  position: relative;
+  gap: 40px;
+  border-bottom: 2px solid rgba(255, 91, 46, 0.07);
+}
+
+.features-info__link {
+  gap: 5px;
+  color: #48496a;
+  font-family: "Sora", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.features-info__item:nth-child(2) .features-info__link img {
+  translate: -3px 4px;
+}
+
+.features-info__item.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  display: block;
+  width: 95px;
+  height: 2px;
+  background-color: var(--btn-color);
+}
+
+.features-info__desc {
+  margin-top: 36px;
+  width: 73%;
+  font-size: 1.4rem;
+  line-height: 1.71;
+}
+
+.features-info__wrapp-link {
+  margin-top: 32px;
+  padding-bottom: 3px;
+  display: inline-block;
+  color: #ff5d31;
+  font-weight: 500;
+  border-bottom: 1.5px solid #ff5d31;
+}
