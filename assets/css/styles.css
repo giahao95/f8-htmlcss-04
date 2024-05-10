@@ -892,3 +892,134 @@ a {
 .pricing-item__untility.check-none::before {
   opacity: 0.3;
 }
+
+/* ===== Reviews ===== */
+.reviews {
+  margin-top: 53px;
+}
+
+.reviews__list {
+  position: relative;
+}
+
+.reviews__list > button {
+  position: absolute;
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+  font-size: 1.4rem;
+  color: var(--btn-color);
+  border: 1px solid var(--btn-color);
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.reviews__list > button:hover {
+  color: #fff;
+  background-color: var(--btn-color);
+  box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+}
+
+.reviews__previous {
+  left: 0;
+  top: 50%;
+  translate: 0 -50%;
+}
+
+.reviews__next {
+  right: 0;
+  top: 50%;
+  translate: 0 -50%;
+}
+
+.reviews__item {
+  justify-content: space-between;
+  width: 83%;
+  margin: 0 auto;
+}
+
+.reviews figure {
+  position: relative;
+}
+
+.reviews__img {
+  position: relative;
+  bottom: -2px;
+  max-width: 274px;
+  object-fit: cover;
+  border-radius: 999px;
+}
+
+.reviews__box {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 274px;
+  height: 350px;
+  border-radius: 999px;
+  background: #ffda54;
+  z-index: -1;
+}
+
+.reviews__content {
+  padding-top: 40px;
+  width: 58%;
+}
+
+.reviews__heading {
+  font-size: 5.2rem;
+  line-height: 1.19;
+}
+
+.reviews__desc {
+  margin-top: 24px;
+  color: #000;
+  font-size: 1.8rem;
+  line-height: 1.55;
+}
+
+.reviews__name {
+  margin-top: 34px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: #282828;
+  font-family: "Sora", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.reviews__name::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background-color: #000;
+}
+
+.reviews__controls {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 56px;
+}
+
+.review__controls-item {
+  padding: 0;
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border: 1px solid var(--btn-color);
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  transition: width 0.3s, border-radius 0.3s, background-color 0.3s;
+}
+
+.review__controls-item.active {
+  width: 25px;
+  border-radius: 999px;
+  background-color: var(--btn-color);
+}
