@@ -78,6 +78,13 @@ a {
   box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
 }
 
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 3);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 /* ===== Header ===== */
 .header {
   padding-top: 26px;
@@ -648,4 +655,240 @@ a {
   translate: -50%;
   margin-top: 45px;
   display: inline-block;
+}
+
+/* ===== Staff ===== */
+.staff {
+  margin-top: 130px;
+}
+
+.staff_subtitle {
+  color: #5e6085;
+  text-align: center;
+  font-family: "Sora", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.staff__heading {
+  margin-top: 15px;
+  font-size: 5.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.staff__list {
+  margin-top: 60px;
+  justify-content: space-between;
+}
+
+.staff__item figure {
+  position: relative;
+}
+
+.staff__item:nth-child(odd) figure svg {
+  position: absolute;
+  left: -18px;
+  bottom: 6px;
+}
+
+.staff__item:nth-child(even) figure svg {
+  position: absolute;
+  top: 20px;
+  left: -18px;
+}
+
+.staff__img {
+  max-width: 100%;
+  border-radius: 0 0 999px 999px;
+  object-fit: cover;
+}
+
+.staff__box {
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 234px;
+  height: 266px;
+  border-radius: 999px;
+  z-index: -1;
+}
+
+.staff__item:first-child .staff__box {
+  background: linear-gradient(180deg, #90ccff 0%, #59a8eb 95.96%);
+}
+
+.staff__item:nth-child(2) .staff__box {
+  background: linear-gradient(180deg, #ff997e 0%, #f3752e 100%);
+}
+
+.staff__item:nth-child(3) .staff__box {
+  background: linear-gradient(180deg, #fabf3e 0%, #ffa14a 100%);
+}
+
+.staff__item:last-child .staff__box {
+  background: linear-gradient(180deg, #5bd6e2 0%, #00a7cc 100%);
+}
+
+.staff__position {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.staff__name {
+  margin-top: 14px;
+  color: var(--heading-text-color);
+  text-align: center;
+  font-family: "Sora", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.staff__btn {
+  position: relative;
+  left: 50%;
+  translate: -50% 0;
+  margin-top: 68px;
+  display: inline-block;
+}
+
+/* ===== Pricing ===== */
+.pricing {
+  margin-top: 130px;
+  padding: 86px 0;
+  background-color: #fff6ed;
+}
+
+.pricing__heading {
+  text-align: center;
+  font-size: 5.2rem;
+  font-weight: 700;
+}
+
+.pricing__desc {
+  margin: 24px auto 38px;
+  width: 60%;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.87;
+}
+
+.pricing__date {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.pricing__btn {
+  padding: 0;
+  display: inline-block;
+  min-width: 276px;
+  border-radius: 999px;
+  border: 1px solid #ff5b2e;
+  background-color: transparent;
+  color: var(--btn-color);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.pricing__btn span {
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 999px;
+}
+
+.pricing__btn-year {
+  background-color: var(--btn-color);
+  color: #fff;
+}
+
+.pricing__img-sale {
+  position: absolute;
+  top: -13px;
+  right: 29%;
+  width: 86px;
+  height: 36px;
+}
+
+.pricing__list {
+  width: 88%;
+  margin: 56px auto 0;
+  gap: 44px;
+}
+
+.pricing-item {
+  width: calc((100% / 3) - 29.33px);
+  padding: 30px 28px 43px;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.pricing-item__subtitle {
+  color: var(--btn-color);
+  font-size: 1.2rem;
+}
+
+.pricing-item__title {
+  margin-top: 8px;
+  color: #3f4065;
+  font-family: "Sora", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.pricing-item__number {
+  margin-top: 24px;
+  color: var(--heading-text-color);
+  font-family: "Sora", sans-serif;
+  font-size: 3.3rem;
+  font-weight: 700;
+}
+
+.pricing-item__btn {
+  margin-top: 22px;
+  display: block;
+  padding: 14px 0;
+  width: 100%;
+  text-align: center;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.pricing-item__btn:hover {
+  color: #fff;
+  background-color: var(--btn-color);
+  opacity: 1;
+  box-shadow: none;
+}
+
+.pricing-item__list {
+  margin-top: 24px;
+}
+
+.pricing-item__untility + .pricing-item__untility {
+  margin-top: 18px;
+}
+
+.pricing-item__untility {
+  position: relative;
+  padding-left: 22px;
+  color: var(---paragraph-text-color);
+  font-size: 1.4rem;
+}
+
+.pricing-item__untility::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 0;
+  display: inline-block;
+  width: 8px;
+  height: 4px;
+  border: 1px solid;
+  border-color: transparent transparent var(--btn-color) var(--btn-color);
+  rotate: -45deg;
+}
+
+.pricing-item__untility.check-none::before {
+  opacity: 0.3;
 }
