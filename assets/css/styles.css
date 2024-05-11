@@ -1018,6 +1018,10 @@ a {
   transition: width 0.3s, border-radius 0.3s, background-color 0.3s;
 }
 
+.review__controls-item:hover {
+  background-color: var(--btn-color);
+}
+
 .review__controls-item.active {
   width: 25px;
   border-radius: 999px;
@@ -1111,10 +1115,21 @@ a {
   margin-top: 130px;
 }
 
-.footer__left {
-  padding: 114px 8.8% 148px;
+.footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
   width: 43%;
   background-color: #fff6ed;
+  z-index: -1;
+}
+
+.footer__left {
+  width: 41.5%;
+  padding: 114px 0 148px;
 }
 
 .footer__form {
@@ -1137,7 +1152,7 @@ a {
 .footer__submit {
   position: absolute;
   top: 0;
-  right: 93px;
+  left: 217px;
   width: 51px;
   height: 51px;
   font-size: 1.4rem;
